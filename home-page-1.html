@@ -39,6 +39,9 @@
    <!-- <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"> -->
    <!-- Core theme CSS (includes Bootstrap)-->
    <link rel="stylesheet" href="assets/css/styles.css" />
+   <style type="text/css">
+      #more {display: none;}
+   </style>
 </head>
 
 <body>
@@ -92,14 +95,15 @@
                   <div class="card-body">
                      <a href="" style="text-decoration: none;">
                         <h4 class="card-title">The Port Harcourt Pleasure Park is a fun place to go.</h4>
-                        <p class="card-text">The Port Harcourt Pleasure Park is a fun place for everyone to go. It's a big park on Aba road in Rivers State. The Government of Rivers State owns the park. The Pleasure Park opened in May 2017. It was soon given an award for being the Best Family Amusement Center.
+                        <p class="card-text">The Port Harcourt Pleasure Park is a fun place for everyone to go. It's a big park on Aba road in Rivers State. The Government of Rivers State owns the park. The Pleasure Park opened in May 2017. It was soon given an award for being the Best Family Amusement<span id="dots">...</span><span id="more"> Center.
                         </p>
                         <p class="card-text">The Port Harcourt Pleasure Park is a fun place for kids and families to play and have fun while being active and healthy. To go inside the park as a grown-up, you need to pay N500 naira and for kids, it's N350 naira. Little kids who are two years old or younger can go to the Pleasure Park for free. Julius Berger Nigeria Plc built the park to make money for the state and attract tourists. The park has lots of fun things to do for people of all ages. Some of these things are climbing, mini-golf, soccer, video games, jogging, exercise equipment, water play, and special movie theaters. You can pay N600 to watch a movie at the 5D cinema or N1000 to watch a movie at the 9D cinema. The Port Harcourt Pleasure Park almost won the award for the second-best place to visit in Nigeria.
-                        </p>
+                        </span></p>
                      </a>
                      <p class="card-text" style="padding-top: 2%;"><small class="text-muted">Posted by&nbsp;AOS
                            on 18 June, 2022.</small><i>Category: </i><strong>Object</strong>
                      </p>
+                     <button onclick="myFunction()" id="myBtn">Read more</button>
                   </div>
                </div>
             </div>
@@ -292,6 +296,23 @@
    <!-- Bootstrap core JavaScript-->
    <script src="assets/vendor/jquery/jquery.min.js"></script>
    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min-1.js"></script>
+   <script type="text/javascript">
+      function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+      }
+   </script>
 
 </body>
 
