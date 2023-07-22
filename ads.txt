@@ -1,0 +1,9 @@
+
+```
+# Google AdSense
+google.com, pub-4787579229999542, DIRECT, f08c47fec0942fa0
+
+# Authorized Sellers
+google.com, pub-4787579229999542, DIRECT, f08c47fec0942fa0
+example.com, pub-1234567890123456, RESELLER, f08c47fec0942fa0
+```
